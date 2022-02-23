@@ -20,3 +20,13 @@ print(n, m)
 
 >> 20 10
 '''
+
+n, m = tuple(map(int, input().split()))
+
+def swap(a, b):
+    a , b = b, a
+    return a, b
+
+n, m = swap(n, m)
+#int는 immutable하기 때문에 변수 초기화를 새로 해줘야한다.
+print(n, m)
