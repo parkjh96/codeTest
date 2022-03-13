@@ -1,3 +1,10 @@
+'''
+time 모듈 perf_counter와 process_time의 차이
+perf_counter는 코드 연산 시간 외에 sleep, file io 등 pending에 들어가는 시간까지 모두 포함해서 측정
+
+process_time은 코드의 연산 시간만을 측정 pending 시간은 측정되지 않는다.
+'''
+
 import time, random
 
 def prefixSum1(X, n):
