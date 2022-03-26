@@ -7,6 +7,7 @@ process_time은 코드의 연산 시간만을 측정 pending 시간은 측정되
 
 import time, random
 
+
 def prefixSum1(X, n):
     print("prefixSum1")
     S = [0] * n
